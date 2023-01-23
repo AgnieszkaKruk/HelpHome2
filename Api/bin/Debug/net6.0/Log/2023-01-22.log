@@ -1,0 +1,171 @@
+->(2023-01-22 09:15:37.3861) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 09:20:24.3502) : Info : Offerents GET AllOfferents action invoked
+
+-------------- Error (2023-01-22 09:33:43.1696) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-22 09:34:15.2738) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-22 09:34:42.1568) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-22 09:35:26.4572) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+->(2023-01-22 09:37:35.8869) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 09:38:35.0476) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 09:50:57.3093) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 09:56:48.2902) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 09:57:44.7945) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:07:14.6034) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:07:52.4279) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:14:01.6616) : Info : Offerents GET AllOfferents action invoked
+
+-------------- Error (2023-01-22 10:15:52.8914) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-22 10:16:03.8763) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-22 10:16:47.0313) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+->(2023-01-22 10:18:46.1036) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:19:59.9963) : Info : Offerents GET AllOfferents action invoked
+
+-------------- Error (2023-01-22 10:27:34.3820) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-22 10:27:44.4966) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 65
+  Additional Info: Stopped program because of exception
+
+->(2023-01-22 10:28:05.5493) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:35:36.1591) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:38:18.3661) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 10:52:43.3237) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 11:03:45.6856) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 11:23:49.9346) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 11:24:39.9393) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 11:25:53.3663) : Info : User with id: 1 GET action invoked
+->(2023-01-22 11:33:23.8508) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 11:33:39.3986) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 11:39:00.2716) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 11:39:14.0823) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 11:39:27.9787) : Info : User with id: 1 GET action invoked
+->(2023-01-22 11:44:01.0446) : Info : User with id: 1 GET action invoked
+->(2023-01-22 11:49:08.7146) : Info : User with id: 1 GET action invoked
+->(2023-01-22 12:00:59.3016) : Info : User with id: 2 GET action invoked
+->(2023-01-22 12:01:15.6442) : Info : User with id: 1 GET action invoked
+->(2023-01-22 12:05:07.2415) : Warn : User with id: 2 DELETE action invoked
+->(2023-01-22 12:05:33.0458) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 12:11:29.7114) : Info : User with id: 3 UPDATE action invoked
+->(2023-01-22 12:11:47.2400) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 12:12:02.4112) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 12:12:04.6829) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 12:12:29.2352) : Info : User with id: 3 GET action invoked
+->(2023-01-22 12:13:30.7112) : Info : User with id: 1 UPDATE action invoked
+->(2023-01-22 12:13:54.0323) : Info : User with id: 1 UPDATE action invoked
+->(2023-01-22 12:14:11.9876) : Info : User with id: 3 GET action invoked
+->(2023-01-22 12:14:20.1367) : Info : User with id: 1 GET action invoked
+->(2023-01-22 12:14:27.1785) : Info : User with id: 2 GET action invoked
+->(2023-01-22 12:14:39.7819) : Info : User with id: 3 GET action invoked
+->(2023-01-22 12:14:44.5700) : Info : User with id: 4 GET action invoked
+->(2023-01-22 12:15:02.5562) : Info : User with id: 3 UPDATE action invoked
+->(2023-01-22 12:15:16.3423) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 12:15:26.1085) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 12:16:28.2355) : Info : User with id: 3 UPDATE action invoked
+->(2023-01-22 12:16:34.4458) : Info : User with id: 3 GET action invoked
+->(2023-01-22 12:21:57.0182) : Info : User with id: 1 UPDATE action invoked
+->(2023-01-22 12:22:34.2918) : Info : User with id: 3 UPDATE action invoked
+->(2023-01-22 12:27:34.0149) : Info : User with id: 1 UPDATE action invoked
+->(2023-01-22 12:27:48.7682) : Info : Offerents GET AllOfferents action invoked
+->(2023-01-22 12:27:57.9189) : Info : Seekers GET AllOfferents action invoked
+->(2023-01-22 12:28:10.0698) : Info : User with id: 1 GET action invoked
