@@ -890,3 +890,222 @@
 2023-01-23 13:03:18.7361 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
 2023-01-23 13:03:18.8409 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
 2023-01-23 13:03:20.5050 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 15:24:48.4677 Info Message Template Auto Format enabled
+2023-01-23 15:24:48.4885 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 15:24:48.6208 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 15:24:48.6208 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 15:24:48.6869 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 15:24:51.0828 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:17:11.6894 Info Message Template Auto Format enabled
+2023-01-23 18:17:11.7218 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:17:11.8906 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:17:11.8906 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:17:11.9971 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:17:14.3275 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:20:05.8255 Info Message Template Auto Format enabled
+2023-01-23 18:20:05.8638 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:20:06.0141 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:20:06.0141 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:20:06.1062 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:20:07.8140 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:23:39.4506 Info Message Template Auto Format enabled
+2023-01-23 18:23:39.4688 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:23:39.5600 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:23:39.5600 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:23:39.6119 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:23:41.0598 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:29:04.2839 Info Message Template Auto Format enabled
+2023-01-23 18:29:04.3096 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:29:04.4691 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:29:04.4691 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:29:04.5558 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:29:06.3667 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:30:14.4227 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:30:14.6076 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:32:21.4612 Info Message Template Auto Format enabled
+2023-01-23 18:32:21.4824 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:32:21.6357 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:32:21.6357 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:32:21.7080 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:32:23.2534 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:33:12.3707 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:33:12.4852 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:34:06.3745 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:34:06.3745 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:34:40.9630 Info Message Template Auto Format enabled
+2023-01-23 18:34:40.9630 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:34:41.0454 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:34:41.0454 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:34:41.0768 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:34:41.7781 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:34:41.8663 Info Shutdown() called. Logger closing...
+2023-01-23 18:34:41.8663 Info Closing old configuration.
+2023-01-23 18:34:41.8870 Info Logger has been closed down.
+2023-01-23 18:34:49.7867 Info Message Template Auto Format enabled
+2023-01-23 18:34:49.7867 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:34:49.8656 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:34:49.8656 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:34:49.8980 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:34:50.5347 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:34:50.5991 Info Shutdown() called. Logger closing...
+2023-01-23 18:34:50.5991 Info Closing old configuration.
+2023-01-23 18:34:50.6228 Info Logger has been closed down.
+2023-01-23 18:35:02.7459 Info Message Template Auto Format enabled
+2023-01-23 18:35:02.7459 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:35:02.8146 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:35:02.8146 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:35:02.8532 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:35:03.6715 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:35:03.7624 Info Shutdown() called. Logger closing...
+2023-01-23 18:35:03.7624 Info Closing old configuration.
+2023-01-23 18:35:03.8754 Info Logger has been closed down.
+2023-01-23 18:35:17.3613 Info Message Template Auto Format enabled
+2023-01-23 18:35:17.4015 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:35:17.5905 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:35:17.5905 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:35:17.6685 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:35:19.6177 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:35:56.8999 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:35:57.0118 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-23.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-23 18:39:01.1138 Info Message Template Auto Format enabled
+2023-01-23 18:39:01.1373 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:39:01.2769 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:39:01.2769 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:39:01.3569 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:39:03.2492 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:40:02.2565 Info Message Template Auto Format enabled
+2023-01-23 18:40:02.2883 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:40:02.4222 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:40:02.4222 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:40:02.4791 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:40:04.1194 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:40:48.3570 Info Message Template Auto Format enabled
+2023-01-23 18:40:48.3846 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:40:48.5285 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:40:48.5285 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:40:48.5922 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:40:50.4505 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:45:01.1661 Info Message Template Auto Format enabled
+2023-01-23 18:45:01.1984 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:45:01.3985 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:45:01.4033 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:45:01.5061 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:45:03.3534 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:49:27.7865 Info Message Template Auto Format enabled
+2023-01-23 18:49:27.8029 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-23 18:49:27.9339 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-23 18:49:27.9339 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-23 18:49:27.9802 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-23 18:49:29.3796 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:25:48.0659 Info Message Template Auto Format enabled
+2023-01-24 12:25:48.1313 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:25:48.4036 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:25:48.4036 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:25:48.4818 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:25:50.4172 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:27:30.1415 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-24 12:27:30.1518 Warn FileTarget(Name=errorFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-24 12:28:11.7088 Info Message Template Auto Format enabled
+2023-01-24 12:28:11.7504 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:28:11.9152 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:28:11.9152 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:28:12.0098 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:28:14.0253 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:29:56.7438 Info Message Template Auto Format enabled
+2023-01-24 12:29:56.7687 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:29:56.9278 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:29:56.9278 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:29:57.0479 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:29:58.7112 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:37:28.5061 Info Message Template Auto Format enabled
+2023-01-24 12:37:28.5431 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:37:28.7113 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:37:28.7113 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:37:28.7913 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:37:31.4081 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:42:54.0241 Info Message Template Auto Format enabled
+2023-01-24 12:42:54.0518 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:42:54.2039 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:42:54.2091 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:42:54.2728 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:42:55.7637 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config

@@ -49,6 +49,7 @@ try
     // builder.Services.AddScoped<IWindowsCleaningServices, WindowsCleaningServices>();
     builder.Services.AddScoped<IAccountServices, AccountServices>();
     builder.Services.AddScoped<IUserServices, UserServices>();
+    builder.Services.AddScoped<IOfferServices, OfferServices>();
     builder.Services.AddSingleton<ILog, Log>();
     builder.Services.AddScoped<ErrorHandlingMiddleware>();
     builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();

@@ -10,3 +10,94 @@
 ->(2023-01-23 12:59:45.6692) : Info : Seekers GET AllOfferents action invoked
 ->(2023-01-23 13:07:46.4576) : Info : User with id: 5 UPDATE action invoked
 ->(2023-01-23 13:08:13.5332) : Info : Seekers GET AllOfferents action invoked
+
+-------------- Error (2023-01-23 15:25:33.1079) --------------
+
+  Call Site: Data.Log.Error
+  Exception Type: System.InvalidOperationException
+  Exception Message: Unable to resolve service for type 'Data.Services.IOfferServices' while attempting to activate 'Api.Controllers.OfferController'.
+  Stack Trace:    at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method10(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Api.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\Dell\source\repos\HH2\Api\Middleware\ErrorHandlingMiddleware.cs:line 19
+  Additional Info: System.InvalidOperationException: Unable to resolve service for type 'Data.Services.IOfferServices' while attempting to activate 'Api.Controllers.OfferController'.
+
+
+-------------- Error (2023-01-23 15:25:33.2617) --------------
+
+  Call Site: Data.Log.Error
+  Exception Type: 
+  Exception Message: 
+  Stack Trace: 
+  Additional Info: Unable to resolve service for type 'Data.Services.IOfferServices' while attempting to activate 'Api.Controllers.OfferController'.
+
+->(2023-01-23 18:20:15.9461) : Info : Offers GET AllOffersAsync action invoked
+->(2023-01-23 18:20:52.0935) : Info : Offer with 2 GET GetOfferByIdAsync invoked
+->(2023-01-23 18:21:54.8645) : Info : User with id: 1 GET GetOffersFromUserById action invoked
+->(2023-01-23 18:30:09.2908) : Info : User with id: 3 POST AddOffer action invoked
+->(2023-01-23 18:33:08.3359) : Info : User with id: 1 POST AddOffer action invoked
+
+-------------- Error (2023-01-23 18:34:41.7980) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 66
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-23 18:34:50.5474) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 66
+  Additional Info: Stopped program because of exception
+
+
+-------------- Error (2023-01-23 18:35:03.6930) --------------
+
+  Call Site: Program.<Main>$
+  Exception Type: Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException
+  Exception Message: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+  Stack Trace:    at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Dell\source\repos\HH2\Api\Program.cs:line 66
+  Additional Info: Stopped program because of exception
+
+->(2023-01-23 18:35:52.9114) : Info : User with id: 1 POST AddOffer action invoked
+->(2023-01-23 18:41:22.5877) : Info : User with id: 1 POST AddOffer action invoked
+->(2023-01-23 18:41:55.5034) : Info : User with id: 1 GET action invoked
+->(2023-01-23 18:42:53.1266) : Info : Offers GET AllOffersAsync action invoked
+->(2023-01-23 18:43:35.7843) : Info : Offer with 3 GET GetOfferByIdAsync invoked
+->(2023-01-23 18:43:43.1375) : Info : Offer with 2 GET GetOfferByIdAsync invoked
+->(2023-01-23 18:44:01.5979) : Info : Offer with 3 GET GetOfferByIdAsync invoked
+->(2023-01-23 18:44:08.1722) : Info : Offer with 4 GET GetOfferByIdAsync invoked
+->(2023-01-23 18:45:15.1494) : Info : Offer with 6 GET GetOfferByIdAsync invoked
+->(2023-01-23 18:45:30.8716) : Warn : Offer with id: 6 DELETE DeleteOffer action invoked
+->(2023-01-23 18:45:43.0041) : Info : Offers GET AllOffersAsync action invoked
+->(2023-01-23 18:46:22.8564) : Info : Offer with id: 1 UPDATE UpdateOffer action invoked
+->(2023-01-23 18:46:40.3213) : Info : Offers GET AllOffersAsync action invoked
+->(2023-01-23 18:47:12.1254) : Info : User with id: 1 GET GetOffersFromUserById action invoked
