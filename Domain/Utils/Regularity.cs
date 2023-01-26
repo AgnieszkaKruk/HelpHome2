@@ -3,7 +3,7 @@
     public enum Regularity
     {
         OnceAWeek,
-        TwaiceAWeek,
+        TwiceAWeek,
         OnceAMonth,
         TwiceAMonth,
         JustOnce,

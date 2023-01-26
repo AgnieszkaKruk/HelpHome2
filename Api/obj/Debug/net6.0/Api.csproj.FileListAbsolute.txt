@@ -69,7 +69,6 @@ C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.GeneratedMSBuildEditorCo
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.AssemblyInfoInputs.cache
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.AssemblyInfo.cs
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.csproj.CoreCompileInputs.cache
-C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\staticwebassets.development.json
@@ -82,3 +81,4 @@ C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.genruntimeconfig.cache
 C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\ref\Api.dll
 C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\Newtonsoft.Json.dll

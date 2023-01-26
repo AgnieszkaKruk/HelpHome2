@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bZmXlo9vPcztExmafJkoLouCf30hzEmqqWgkEH79LbK52nRcBLiJ0v+el+mK6L47KpHbr+/9bjrMkphq31r0qw==",
+  "dgSpecHash": "+Unfvc6NTgghEIhU9PHg3+t/5eNF5QhH6l80ivc0C8KJbE4cdiULAyrGn0b+nP9U+6Dxpd1vekWbzerKr4L9fw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\source\\repos\\HH2\\Api\\Api.csproj",
   "expectedPackageFiles": [
@@ -40,6 +40,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\nlog.extensions.logging\\5.2.1\\nlog.extensions.logging.5.2.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.1\\nlog.web.aspnetcore.5.2.1.nupkg.sha512",

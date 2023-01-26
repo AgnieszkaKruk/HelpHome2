@@ -1109,3 +1109,135 @@
 2023-01-24 12:42:54.2091 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
 2023-01-24 12:42:54.2728 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
 2023-01-24 12:42:55.7637 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:54:14.6157 Info Message Template Auto Format enabled
+2023-01-24 12:54:14.6419 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:54:14.8119 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:54:14.8190 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:54:14.8955 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:54:16.7197 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:57:06.6278 Info Message Template Auto Format enabled
+2023-01-24 12:57:06.6766 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 12:57:06.8896 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 12:57:06.8979 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 12:57:06.9757 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 12:57:09.1758 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:01:43.1967 Info Message Template Auto Format enabled
+2023-01-24 13:01:43.2346 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:01:43.4587 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:01:43.4587 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:01:43.5473 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:01:45.9049 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:04:36.3070 Info Message Template Auto Format enabled
+2023-01-24 13:04:36.3373 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:04:36.4926 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:04:36.4926 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:04:36.5726 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:04:38.4489 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:08:45.1951 Info Message Template Auto Format enabled
+2023-01-24 13:08:45.2197 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:08:45.3835 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:08:45.3835 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:08:45.4541 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:08:47.2157 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:11:41.5107 Warn FileTarget(Name=otherFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-24 13:12:44.6245 Info Message Template Auto Format enabled
+2023-01-24 13:12:44.6467 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:12:44.7915 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:12:44.7915 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:12:44.8586 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:12:46.3737 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:19:01.6826 Info Message Template Auto Format enabled
+2023-01-24 13:19:01.7083 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:19:01.8392 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:19:01.8392 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:19:01.9014 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:19:03.7587 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:20:18.1630 Warn FileTarget(Name=otherFile-web): Failed to create file appender: C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\log\2023-01-24.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-01-24 13:28:53.4928 Info Message Template Auto Format enabled
+2023-01-24 13:28:53.5259 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:28:53.6736 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:28:53.6777 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:28:53.7442 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:28:55.5853 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:32:12.1579 Info Message Template Auto Format enabled
+2023-01-24 13:32:12.1833 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:32:12.3525 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:32:12.3525 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:32:12.4303 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:32:14.3954 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:36:26.1293 Info Message Template Auto Format enabled
+2023-01-24 13:36:26.1527 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:36:26.3050 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:36:26.3050 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:36:26.3842 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:36:28.0850 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:38:16.8037 Info Message Template Auto Format enabled
+2023-01-24 13:38:16.8297 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:38:17.0091 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:38:17.0091 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:38:17.0793 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:38:19.0050 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:53:09.4036 Info Message Template Auto Format enabled
+2023-01-24 13:53:09.4173 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:53:09.5270 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:53:09.5270 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:53:09.5754 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:53:12.0006 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:59:44.6849 Info Message Template Auto Format enabled
+2023-01-24 13:59:44.7130 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 13:59:44.8452 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 13:59:44.8452 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 13:59:44.9040 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 13:59:46.4197 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:01:43.7079 Info Message Template Auto Format enabled
+2023-01-24 14:01:43.7336 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 14:01:43.8989 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 14:01:43.8989 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 14:01:43.9771 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:01:45.9434 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:09:38.8255 Info Message Template Auto Format enabled
+2023-01-24 14:09:38.8549 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 14:09:39.0233 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 14:09:39.0233 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 14:09:39.0938 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:09:40.9650 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:13:17.3011 Info Message Template Auto Format enabled
+2023-01-24 14:13:17.3421 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 14:13:17.4627 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 14:13:17.4627 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 14:13:17.5159 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:13:19.1259 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:14:52.0453 Info Message Template Auto Format enabled
+2023-01-24 14:14:52.0723 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-24 14:14:52.1564 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-24 14:14:52.1564 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-24 14:14:52.2004 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-24 14:14:53.6047 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-26 09:48:00.1274 Info Message Template Auto Format enabled
+2023-01-26 09:48:00.2100 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-26 09:48:00.4024 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-26 09:48:00.4024 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-26 09:48:00.4899 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-26 09:48:03.4756 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-26 09:51:42.4258 Info Message Template Auto Format enabled
+2023-01-26 09:51:42.4468 Info Loading assembly: NLog.Web.AspNetCore
+2023-01-26 09:51:42.5632 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-01-26 09:51:42.5632 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-01-26 09:51:42.6440 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-01-26 09:51:44.2285 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config

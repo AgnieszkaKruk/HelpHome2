@@ -5,7 +5,6 @@
         WindowsSillCleaning,
         BlindsCleaning,
         RolerBlindsCleaning,
-        Unnecessary,
         Other,
         FridgeCleaning,
         OvenCleaning,

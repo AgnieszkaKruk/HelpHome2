@@ -25,7 +25,7 @@ namespace Data.Services
         {
             _logger.Info($"Offers GET AllOffersFromOfferentsAsync action invoked");
             var offers = await _context.Offers.Where(p =>p.User.Role.Name == "Offerent")
-    .Select(u => new OfferDto { Name = u.Name, Description = u.Description, Address = u.Address, CreatedDate = u.CreatedDate, UpdateDate = u.UpdateDate, PriceOffer = u.PriceOffer })
+    .Select(u => new OfferDto { Id = u.Id, Name = u.Name, Description = u.Description, Address = u.Address, CreatedDate = u.CreatedDate, UpdateDate = u.UpdateDate, PriceOffer = u.PriceOffer, UserId = u.Id })
     .ToListAsync();
 
             if (offers is null)
@@ -42,7 +42,7 @@ namespace Data.Services
         {
             _logger.Info($"Offers GET AllOffersFromSeekersAsync action invoked");
             var offers = await _context.Offers.Where(p => p.User.Role.Name == "Seeker")
-    .Select(u => new OfferDto { Name = u.Name, Description = u.Description, Address = u.Address, CreatedDate = u.CreatedDate, UpdateDate = u.UpdateDate, PriceOffer = u.PriceOffer })
+    .Select(u => new OfferDto { Id = u.Id, Name = u.Name, Description = u.Description, Address = u.Address, CreatedDate = u.CreatedDate, UpdateDate = u.UpdateDate, PriceOffer = u.PriceOffer,UserId = u.UserId })
     .ToListAsync();
 
             if (offers is null)
