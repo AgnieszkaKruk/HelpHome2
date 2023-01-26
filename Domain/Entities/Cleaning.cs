@@ -6,7 +6,7 @@ namespace HH2.Entities
     {
         public string Name = "Sprzątanie";
         public int SurfaceToClean { get; set; }
-        public List<Room> Rooms = new List<Room>();
+       
 
     }
 }

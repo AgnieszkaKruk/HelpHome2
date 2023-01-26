@@ -1,5 +1,6 @@
 ﻿using Domain.Utils;
 using HH2.Utils;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HH2.Entities
 {
@@ -14,8 +15,8 @@ namespace HH2.Entities
         public DateTime CreatedDate { get; set; }
         public DateTime? UpdateDate { get; set; }
         public Regularity? Regularity { get; set; }
-
-        public List<AdditionalServices>? additionalServices = new List<AdditionalServices>();
+       
+   
         public int? PriceOffer { get; set; }
         public User User { get; set; }
         public int UserId { get; set; }

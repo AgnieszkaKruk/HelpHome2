@@ -4,6 +4,7 @@ using HH2;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(HHDbContext))]
-    partial class HHDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230126101215_noKeyForAdditionalServives")]
+    partial class noKeyForAdditionalServives
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -125,7 +127,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2023, 1, 26, 11, 45, 9, 551, DateTimeKind.Local).AddTicks(7819),
+                            CreatedDate = new DateTime(2023, 1, 26, 11, 12, 15, 387, DateTimeKind.Local).AddTicks(9414),
                             Description = "Oferuję usługi spzątania mieszkań we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 100,
@@ -136,7 +138,7 @@ namespace Data.Migrations
                         {
                             Id = 2,
                             AddressId = 2,
-                            CreatedDate = new DateTime(2023, 1, 26, 11, 45, 9, 551, DateTimeKind.Local).AddTicks(7905),
+                            CreatedDate = new DateTime(2023, 1, 26, 11, 12, 15, 387, DateTimeKind.Local).AddTicks(9504),
                             Description = "Oferuję usługi spzątania biur we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 150,
@@ -218,6 +220,14 @@ namespace Data.Migrations
                             Id = 3,
                             Name = "Administrator"
                         });
+                });
+
+            modelBuilder.Entity("System.Collections.Generic.List<HH2.Utils.AdditionalServices>", b =>
+                {
+                    b.Property<int>("Capacity")
+                        .HasColumnType("int");
+
+                    b.ToTable("List<AdditionalServices>");
                 });
 
             modelBuilder.Entity("HH2.Entities.Offerent", b =>

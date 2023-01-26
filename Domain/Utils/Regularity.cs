@@ -2,11 +2,11 @@
 {
     public enum Regularity
     {
-        OnceAWeek,
-        TwiceAWeek,
-        OnceAMonth,
-        TwiceAMonth,
-        JustOnce,
-        Other
+        RazWTygodniu,
+        DwaRazyWTygodniu,
+        RazWMiesiącu,
+        DwaRazyWMiesiącu,
+        Raz,
+        Inna
     }
 }

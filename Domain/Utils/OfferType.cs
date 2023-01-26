@@ -8,8 +8,8 @@ namespace Domain.Utils
 {
     public enum OfferType
     {
-        Cleaning,
-        WindowsCleaning,
-        CarpetWashing,
+        Sprzątanie,
+        MycieOkien,
+        PranieDywanów,
     }
 }

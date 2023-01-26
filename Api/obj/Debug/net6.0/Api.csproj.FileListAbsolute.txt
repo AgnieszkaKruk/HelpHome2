@@ -82,3 +82,4 @@ C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\ref\Api.dll
 C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Dell\source\repos\HH2\Api\obj\Debug\net6.0\Api.MvcApplicationPartsAssemblyInfo.cs

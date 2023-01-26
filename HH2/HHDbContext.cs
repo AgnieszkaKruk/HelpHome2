@@ -20,6 +20,7 @@ namespace HH2
 
 
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Role>(eb =>
@@ -39,6 +40,7 @@ namespace HH2
                 }
                 );
             });
+            
 
             modelBuilder.Entity<User>()
         .HasMany(u => u.Offers)
@@ -141,7 +143,7 @@ namespace HH2
                        PriceOffer = 100,
                        CreatedDate = DateTime.Now,
                        UserId = 1,
-                       offerType = Domain.Utils.OfferType.Cleaning,
+                       offerType = Domain.Utils.OfferType.Sprz¹tanie,
                        Description = "Oferujê us³ugi spz¹tania mieszkañ we Wroc³awiu",
                        AddressId = 1,
 
@@ -157,7 +159,7 @@ namespace HH2
                        PriceOffer = 150,
                        CreatedDate = DateTime.Now,
                        UserId = 1,
-                       offerType = Domain.Utils.OfferType.Cleaning,
+                       offerType = Domain.Utils.OfferType.Sprz¹tanie,
                        Description = "Oferujê us³ugi spz¹tania biur we Wroc³awiu",
                        AddressId = 2,
 

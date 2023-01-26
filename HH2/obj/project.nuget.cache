@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "53R4BgpVWMaIOEfjz9SWgQyQJgRUDgseUTXx34UyQUvMdKr5a3JVzF8d17ivg49uM9/8v7xsmZ66IPnBQkBqDQ==",
+  "dgSpecHash": "Yq0smtz5nLZnN1V63EMPjvF4KP5VVpIKpJVMDjGnLOPtWwXQAnJ+8fQSI0Ak4fhNrIaFRq4sJcDe5Bahb8EXZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\Data.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,7 @@
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\nlog\\5.1.1\\nlog.5.1.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\nlog.extensions.logging\\5.2.1\\nlog.extensions.logging.5.2.1.nupkg.sha512",
     "C:\\Users\\Dell\\.nuget\\packages\\nlog.web.aspnetcore\\5.2.1\\nlog.web.aspnetcore.5.2.1.nupkg.sha512",
