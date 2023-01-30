@@ -135,7 +135,7 @@ namespace Data.Services
                 var offer = await _context.Offers.FirstOrDefaultAsync(u => u.Id == id);
                 if (offer is null)
                 {
-                    throw new NotFoundException("User is not found");
+                    throw new NotFoundException("Offer is not found");
                 }
                 else
                 {

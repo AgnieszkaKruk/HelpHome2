@@ -22,6 +22,38 @@ namespace Data.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Domain.Entities.Event", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Color")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("End")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Start")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Text")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Events");
+                });
+
             modelBuilder.Entity("HH2.Entities.Address", b =>
                 {
                     b.Property<int>("Id")
@@ -125,7 +157,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2023, 1, 26, 11, 45, 9, 551, DateTimeKind.Local).AddTicks(7819),
+                            CreatedDate = new DateTime(2023, 1, 30, 11, 50, 7, 477, DateTimeKind.Local).AddTicks(6179),
                             Description = "Oferuję usługi spzątania mieszkań we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 100,
@@ -136,7 +168,7 @@ namespace Data.Migrations
                         {
                             Id = 2,
                             AddressId = 2,
-                            CreatedDate = new DateTime(2023, 1, 26, 11, 45, 9, 551, DateTimeKind.Local).AddTicks(7905),
+                            CreatedDate = new DateTime(2023, 1, 30, 11, 50, 7, 477, DateTimeKind.Local).AddTicks(6267),
                             Description = "Oferuję usługi spzątania biur we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 150,
@@ -279,6 +311,17 @@ namespace Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("Domain.Entities.Event", b =>
+                {
+                    b.HasOne("HH2.Entities.Offerent", "Offerent")
+                        .WithMany("Events")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Offerent");
+                });
+
             modelBuilder.Entity("HH2.Entities.Address", b =>
                 {
                     b.HasOne("HH2.Entities.Offerent", null)
@@ -333,6 +376,8 @@ namespace Data.Migrations
                     b.Navigation("Addresses");
 
                     b.Navigation("BlockedSeekers");
+
+                    b.Navigation("Events");
                 });
 #pragma warning restore 612, 618
         }

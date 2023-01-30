@@ -1,3 +1,4 @@
+using Domain.Entities;
 using HH2.Entities;
 using HH2.Utils;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ namespace HH2
         }
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Event> Events { get; set; }
 
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Role> Roles { get; set; }
@@ -40,12 +42,23 @@ namespace HH2
                 }
                 );
             });
-            
+
 
             modelBuilder.Entity<User>()
         .HasMany(u => u.Offers)
         .WithOne(o => o.User)
         .HasForeignKey(o => o.UserId);
+
+            modelBuilder.Entity<Seeker>(eb =>
+                {
+                    eb.Property(u => u.Name).HasMaxLength(25).IsRequired();
+                    eb.Property(u => u.Email).IsRequired();
+
+                });
+            modelBuilder.Entity<Offerent>()
+       .HasMany(u => u.Events)
+       .WithOne(o => o.Offerent)
+       .HasForeignKey(o => o.UserId);
 
             modelBuilder.Entity<Seeker>(eb =>
                 {

@@ -1,4 +1,5 @@
-﻿using HH2.Entities;
+﻿using Domain.Entities;
+using HH2.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,7 @@ namespace Domain.Models
         public string Name { get; set; }
 
         public List<OfferDto> OfferDtos { get; set; }
-
+        public List<Event> Events { get; set; }
     }
 }
 

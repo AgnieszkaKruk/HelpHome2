@@ -1,4 +1,5 @@
-﻿using HH2.Utils;
+﻿using Domain.Entities;
+using HH2.Utils;
 
 namespace HH2.Entities
 {
@@ -9,8 +10,8 @@ namespace HH2.Entities
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
         public string PasswordHash { get; set; }
-
        
+
 
         public virtual List<Offer> Offers { get; set; }
         
