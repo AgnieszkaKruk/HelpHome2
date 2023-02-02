@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "3ssrsokfP4rYLrXF+GStRzT8bLrLFQ2R7P3NnFKtFOE=",
+  "Hash": "6P1uEL4xSTN9v0gHJtQNEoVHMtL6krMS4AhA5kfRLEI=",
   "Source": "Api",
   "BasePath": "_content/Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\Data.csproj",
+      "Identity": "C:\\Users\\Ewa\\source\\ElPoryecteGrande\\HelpHome2\\HH2\\Data.csproj",
       "Version": 2,
       "Source": "Data",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",

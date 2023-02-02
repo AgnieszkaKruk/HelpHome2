@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "x2emIJsp/PnNjjSH040xSAYXnTQrg9GOJ9a9pQO3EfMrx8pKBHKs+xfHC3QMTBkNdb+7xDSCK9seZKnSvFLQ1w==",
+  "dgSpecHash": "MdGiNhIqokzVsI3DUQuhuo9/SznyFKztF7uAxFSEcMzpjCiS238X308ULt2hiRIHHoFb+Sw8tsgd8uB9ZuawOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Ewa\\source\\ElPoryecteGrande\\HelpHome2\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Dell\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\Ewa\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []
 }
