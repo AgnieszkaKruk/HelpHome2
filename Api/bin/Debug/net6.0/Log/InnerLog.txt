@@ -1397,6 +1397,87 @@
 2023-01-30 12:58:34.3377 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
 2023-01-30 12:58:34.3851 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
 2023-01-30 12:58:36.1374 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-01 20:02:35.6474 Info Message Template Auto Format enabled
+2023-02-01 20:02:35.6799 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-01 20:02:35.9478 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-01 20:02:35.9478 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-01 20:02:36.1016 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-01 20:02:40.1494 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-01 22:32:50.6667 Info Message Template Auto Format enabled
+2023-02-01 22:32:50.6811 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-01 22:32:50.7439 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-01 22:32:50.7439 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-01 22:32:50.7780 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-01 22:32:52.4660 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-01 22:33:24.7898 Warn FileTarget(Name=otherFile-web): Failed to create file appender: C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\log\2023-02-01.log Exception: System.IO.IOException: The process cannot access the file 'C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\log\2023-02-01.log' because it is being used by another process.
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.CreateFile(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options)
+   at Microsoft.Win32.SafeHandles.SafeFileHandle.Open(String fullPath, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at System.IO.Strategies.OSFileStreamStrategy..ctor(String path, FileMode mode, FileAccess access, FileShare share, FileOptions options, Int64 preallocationSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.TryCreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.BaseFileAppender.CreateFileStream(Boolean allowFileSharedWriting, Int32 overrideBufferSize)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender..ctor(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.SingleProcessFileAppender.Factory.NLog.Internal.FileAppenders.IFileAppenderFactory.Open(String fileName, ICreateFileParameters parameters)
+   at NLog.Internal.FileAppenders.FileAppenderCache.CreateAppender(String fileName, Int32 freeSpot)
+2023-02-01 22:35:36.3499 Info Message Template Auto Format enabled
+2023-02-01 22:35:36.3649 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-01 22:35:36.4792 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-01 22:35:36.4792 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-01 22:35:36.5520 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-01 22:35:38.8069 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:04:31.6798 Info Message Template Auto Format enabled
+2023-02-02 08:04:31.6913 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 08:04:31.7518 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 08:04:31.7518 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 08:04:31.7809 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:04:33.2975 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:14:57.9980 Info Message Template Auto Format enabled
+2023-02-02 08:14:58.0099 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 08:14:58.1467 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 08:14:58.1467 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 08:14:58.2394 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:14:59.9372 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:21:30.7176 Info Message Template Auto Format enabled
+2023-02-02 08:21:30.7291 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 08:21:30.7685 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 08:21:30.7685 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 08:21:30.7906 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:21:31.1713 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:33:54.6508 Info Message Template Auto Format enabled
+2023-02-02 08:33:54.6768 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 08:33:54.8690 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 08:33:54.8995 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 08:33:55.0453 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:33:57.7761 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:58:02.8670 Info Message Template Auto Format enabled
+2023-02-02 08:58:02.8783 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 08:58:02.9407 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 08:58:02.9407 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 08:58:02.9741 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:58:04.7543 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:58:25.1246 Info Message Template Auto Format enabled
+2023-02-02 08:58:25.1525 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 08:58:25.2299 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 08:58:25.2299 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 08:58:25.2665 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 08:58:27.1230 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 09:10:16.7002 Info Message Template Auto Format enabled
+2023-02-02 09:10:16.7125 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 09:10:16.7877 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 09:10:16.7877 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 09:10:16.8318 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 09:10:17.7489 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 09:12:27.8951 Info Message Template Auto Format enabled
+2023-02-02 09:12:27.9631 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 09:12:28.1444 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 09:12:28.2460 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 09:12:28.5351 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 09:12:30.9376 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 09:13:19.4147 Info Message Template Auto Format enabled
+2023-02-02 09:13:19.5101 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-02 09:13:20.2231 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-02 09:13:20.2231 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-02 09:13:20.3763 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
+2023-02-02 09:13:22.5680 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Ewa\source\ElPoryecteGrande\HelpHome2\Api\bin\Debug\net6.0\nlog.config
 2023-02-20 13:36:56.9386 Info Message Template Auto Format enabled
 2023-02-20 13:36:56.9850 Info Loading assembly: NLog.Web.AspNetCore
 2023-02-20 13:36:57.0893 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
