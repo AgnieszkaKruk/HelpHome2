@@ -9,6 +9,11 @@ namespace HH2.Entities
         public virtual List<Seeker> BlockedSeekers { get; set; } = new List<Seeker>();
         public List<Event> Events { get; set; } = new List<Event>();
 
+        public void AddBlockedSeeker(Seeker seeker)
+        {
+            BlockedSeekers.Add(seeker);
+        }
+
 
     }
 }

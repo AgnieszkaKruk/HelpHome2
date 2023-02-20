@@ -3,7 +3,10 @@
     public class Seeker : User
     {
         public List<Offerent> favouriteOfferents = new List<Offerent>();
-       
+        public void AddFavouriteOfferent(Offerent offerent)
+        {
+            favouriteOfferents.Add(offerent);
+        }
     }
 }
 
