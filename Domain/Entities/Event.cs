@@ -1,4 +1,5 @@
-﻿using HH2.Entities;
+﻿using Domain.Utils;
+using HH2.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,36 @@ namespace Domain.Entities
         public string Color { get; set; }
         public Offerent Offerent { get; set; }
         public int UserId { get; set; }
+
+        public EventStatus Status { get; set; }
+
+        private void SetColor()
+        {
+            // sprawdzić czy w praktyce będziep otrzba 4 statusy.. Moze tylko free albo booked? 
+            switch (Status)
+            {
+                case EventStatus.Free: Color = "Green";
+                    break;
+                case EventStatus.Booked: Color = "Orange";
+                    break;
+                case EventStatus.Rejected: Color = "Red";
+                    break;
+                case EventStatus.Accepted:  Color = "Blue";
+                    break;
+            }
+        }
+
+        public void SetBookedStatus()
+        {
+            Status = EventStatus.Booked;
+        }
+        public void SetRejectedStatus()
+        {
+            Status = EventStatus.Rejected;
+        }
+        public void SetAcceptedStatus()
+        {
+            Status = EventStatus.Accepted;
+        }
     }
 }

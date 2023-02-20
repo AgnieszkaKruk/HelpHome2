@@ -40,6 +40,9 @@ namespace Data.Migrations
                     b.Property<DateTime>("Start")
                         .HasColumnType("datetime2");
 
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -157,7 +160,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2023, 1, 30, 11, 50, 7, 477, DateTimeKind.Local).AddTicks(6179),
+                            CreatedDate = new DateTime(2023, 2, 20, 13, 37, 58, 281, DateTimeKind.Local).AddTicks(4264),
                             Description = "Oferuję usługi spzątania mieszkań we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 100,
@@ -168,7 +171,7 @@ namespace Data.Migrations
                         {
                             Id = 2,
                             AddressId = 2,
-                            CreatedDate = new DateTime(2023, 1, 30, 11, 50, 7, 477, DateTimeKind.Local).AddTicks(6267),
+                            CreatedDate = new DateTime(2023, 2, 20, 13, 37, 58, 281, DateTimeKind.Local).AddTicks(4362),
                             Description = "Oferuję usługi spzątania biur we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 150,

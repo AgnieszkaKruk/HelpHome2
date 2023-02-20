@@ -13,13 +13,7 @@ namespace Api
             CreateMap<User, UserDto>();     
             CreateMap<Offer, OfferDto>();
             CreateMap<OfferDto, Offer>();
-            ////CreateMap<CreateSeekerDto, Seeker>();           
-            //CreateMap<CreateCarpetWashingDto, CarpetWashing>();
-            //CreateMap<CarpetWashing, CarpetWashingDto>();
-            //CreateMap<Cleaning, CleaningDto>();
-            //CreateMap<WindowsCleaning, WindowsCleaningDto>();
-            //CreateMap<CreateWindowsCleaningDto, WindowsCleaning>();
-            //CreateMap<CreateCleaningDto, Cleaning>();
+           
 
         }
     }

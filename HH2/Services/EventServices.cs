@@ -75,7 +75,7 @@ namespace Data.Services
             }
             else
             {
-                var newEvent = new Event { Start = eventt.Start, End = eventt.End, Color = eventt.Color, Text = eventt.Text, Offerent = eventt.Offerent, UserId = id }; 
+                var newEvent = new Event { Start = eventt.Start, End = eventt.End,Status = eventt.Status, Color = eventt.Color, Text = eventt.Text, Offerent = eventt.Offerent, UserId = id }; 
                 _context.Events.Add(newEvent);
                 await _context.SaveChangesAsync();
             }
@@ -111,6 +111,7 @@ namespace Data.Services
                 eventt.Start = newevent.Start;
                 eventt.End = newevent.End;
                 eventt.Text = newevent.Text;
+                eventt.Status = newevent.Status;
                 eventt.Color = newevent.Color;
                 eventt.Offerent = newevent.Offerent;
                 eventt.UserId = newevent.UserId;

@@ -1397,3 +1397,30 @@
 2023-01-30 12:58:34.3377 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
 2023-01-30 12:58:34.3851 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
 2023-01-30 12:58:36.1374 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:36:56.9386 Info Message Template Auto Format enabled
+2023-02-20 13:36:56.9850 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-20 13:36:57.0893 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-20 13:36:57.0893 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-20 13:36:57.1404 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:36:58.1140 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:36:58.2564 Info Shutdown() called. Logger closing...
+2023-02-20 13:36:58.2564 Info Closing old configuration.
+2023-02-20 13:36:58.2881 Info Logger has been closed down.
+2023-02-20 13:37:55.8699 Info Message Template Auto Format enabled
+2023-02-20 13:37:55.8835 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-20 13:37:55.9655 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-20 13:37:55.9676 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-20 13:37:56.0091 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:37:56.7910 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:37:56.8760 Info Shutdown() called. Logger closing...
+2023-02-20 13:37:56.8760 Info Closing old configuration.
+2023-02-20 13:37:56.8992 Info Logger has been closed down.
+2023-02-20 13:38:12.8699 Info Message Template Auto Format enabled
+2023-02-20 13:38:12.8875 Info Loading assembly: NLog.Web.AspNetCore
+2023-02-20 13:38:12.9512 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-02-20 13:38:12.9512 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-02-20 13:38:12.9888 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:38:13.7780 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\Dell\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-02-20 13:38:13.8747 Info Shutdown() called. Logger closing...
+2023-02-20 13:38:13.8747 Info Closing old configuration.
+2023-02-20 13:38:13.9085 Info Logger has been closed down.
