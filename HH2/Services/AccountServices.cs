@@ -20,19 +20,43 @@ namespace Data.Services
 
         public void RegisterUser(RegisterDto dto)
         {
-            var newUser = new User()
+            User newUser;
+
+            if (dto.RoleId == 1) // Seeker
             {
-                Name = dto.Name,
-                Email = dto.Email,
-                RoleId = dto.RoleId,
+                var newSeeker = new Seeker()
+                {
+                    Name = dto.Name,
+                    Email = dto.Email,
+                    PhoneNumber = dto.PhoneNumber
+                };
 
-                PhoneNumber = dto.PhoneNumber, ///dodac rozrozienie na offerent i seeker
+                var newPassword = _passwordHasher.HashPassword(newSeeker, dto.Password);
+                newSeeker.PasswordHash = newPassword;
 
+                newUser = newSeeker;
+            }
+            else if (dto.RoleId == 2) // Offerent
+            {
+                var newOfferent = new Offerent()
+                {
+                    Name = dto.Name,
+                    Email = dto.Email,
+                    PhoneNumber = dto.PhoneNumber
+                };
 
-            };
+                var newPassword = _passwordHasher.HashPassword(newOfferent, dto.Password);
+                newOfferent.PasswordHash = newPassword;
 
-            var newPassword = _passwordHasher.HashPassword(newUser, dto.Password);
-            newUser.PasswordHash = newPassword;
+                newUser = newOfferent;
+            }
+            else
+            {
+                
+                throw new ArgumentException("Invalid roleId value.");
+            }
+
+            newUser.RoleId = dto.RoleId;
             _context.Users.Add(newUser);
             _context.SaveChanges();
         }
