@@ -34,7 +34,9 @@ namespace Data.Services
                 var newPassword = _passwordHasher.HashPassword(newSeeker, dto.Password);
                 newSeeker.PasswordHash = newPassword;
 
-                newUser = newSeeker;
+                newSeeker.RoleId = dto.RoleId;
+                _context.Users.Add(newSeeker);
+                _context.SaveChanges();
             }
             else if (dto.RoleId == 2) // Offerent
             {
@@ -48,7 +50,9 @@ namespace Data.Services
                 var newPassword = _passwordHasher.HashPassword(newOfferent, dto.Password);
                 newOfferent.PasswordHash = newPassword;
 
-                newUser = newOfferent;
+                newOfferent.RoleId = dto.RoleId;
+                _context.Users.Add(newOfferent);
+                _context.SaveChanges();
             }
             else
             {
@@ -56,9 +60,7 @@ namespace Data.Services
                 throw new ArgumentException("Invalid roleId value.");
             }
 
-            newUser.RoleId = dto.RoleId;
-            _context.Users.Add(newUser);
-            _context.SaveChanges();
+            
         }
 
         public User AutenticateUser(LoginDto dto)
