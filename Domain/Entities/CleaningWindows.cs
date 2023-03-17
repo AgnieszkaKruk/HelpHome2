@@ -2,5 +2,6 @@
 {
     public class CleaningWindows : Offer
     {
+        public string Name = "Mycie okien";
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\Data.csproj": {}
+    "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\Domain.csproj": {
+    "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\KOMPUTER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KOMPUTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -60,21 +61,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\Data.csproj": {
+    "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\Data.csproj",
-        "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dell\\source\\repos\\HH2\\HH2\\obj\\",
+        "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\Data.csproj",
+        "packagesPath": "C:\\Users\\KOMPUTER\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\KOMPUTER\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -88,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Dell\\source\\repos\\HH2\\Domain\\Domain.csproj"
+              "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\Domain.csproj"
               }
             }
           }
@@ -137,7 +138,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -149,7 +151,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "Hash": "6P1uEL4xSTN9v0gHJtQNEoVHMtL6krMS4AhA5kfRLEI=",
+  "Hash": "SvpKatxYtYq/Q9O+VBKfpXpQNDegX2+yKebV26G8r/o=",
   "Source": "Api",
   "BasePath": "_content/Api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Ewa\\source\\ElPoryecteGrande\\HelpHome2\\HH2\\Data.csproj",
+      "Identity": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\Data.csproj",
       "Version": 2,
       "Source": "Data",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
       "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier"
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
   "DiscoveryPatterns": [],

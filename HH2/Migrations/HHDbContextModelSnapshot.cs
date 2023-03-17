@@ -99,14 +99,42 @@ namespace Data.Migrations
                             Id = 2,
                             City = "Mikołów",
                             PostalCode = "43-190",
-                            Street = "Majowa"
+                            Street = "Majowa 5"
                         },
                         new
                         {
                             Id = 3,
                             City = "Katowice",
                             PostalCode = "43-190",
-                            Street = "Głogowa"
+                            Street = "Kopernika 34"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            City = "Katowice",
+                            PostalCode = "43-190",
+                            Street = "Głogowa 8"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            City = "Wrocław",
+                            PostalCode = "13-190",
+                            Street = "Główna 10"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            City = "Kraków",
+                            PostalCode = "43-190",
+                            Street = "Moja 14"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            City = "Katowice",
+                            PostalCode = "43-190",
+                            Street = "Zielona 5"
                         });
                 });
 
@@ -160,7 +188,7 @@ namespace Data.Migrations
                         {
                             Id = 1,
                             AddressId = 1,
-                            CreatedDate = new DateTime(2023, 2, 20, 13, 37, 58, 281, DateTimeKind.Local).AddTicks(4264),
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(4948),
                             Description = "Oferuję usługi spzątania mieszkań we Wrocławiu",
                             Name = "Sprzątanie",
                             PriceOffer = 100,
@@ -171,12 +199,155 @@ namespace Data.Migrations
                         {
                             Id = 2,
                             AddressId = 2,
-                            CreatedDate = new DateTime(2023, 2, 20, 13, 37, 58, 281, DateTimeKind.Local).AddTicks(4362),
-                            Description = "Oferuję usługi spzątania biur we Wrocławiu",
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5077),
+                            Description = "Oferuję usługi spzątania najlepiej i najtaniej",
                             Name = "Sprzątanie",
                             PriceOffer = 150,
                             UserId = 1,
                             offerType = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AddressId = 3,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5125),
+                            Description = "Posprzątam u Ciebie!",
+                            Name = "Sprzątanie",
+                            PriceOffer = 100,
+                            UserId = 1,
+                            offerType = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AddressId = 4,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5332),
+                            Description = "Oferuję usługi myycia okien",
+                            Name = "Mycie okien",
+                            PriceOffer = 800,
+                            UserId = 1,
+                            offerType = 1
+                        },
+                        new
+                        {
+                            Id = 5,
+                            AddressId = 5,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5403),
+                            Description = "Myje okna az sie błyszczą",
+                            Name = "Mycie okien",
+                            PriceOffer = 100,
+                            UserId = 2,
+                            offerType = 1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            AddressId = 6,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5463),
+                            Description = "Najtaniej, najelpiej i najszybciej umyje Ci okna",
+                            Name = "Mycie okien",
+                            PriceOffer = 100,
+                            UserId = 2,
+                            offerType = 1
+                        },
+                        new
+                        {
+                            Id = 7,
+                            AddressId = 1,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5514),
+                            Description = "Oferuję usługi mycia okien na błysk!",
+                            Name = "Mycie okien",
+                            PriceOffer = 100,
+                            UserId = 2,
+                            offerType = 1
+                        },
+                        new
+                        {
+                            Id = 8,
+                            AddressId = 2,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5567),
+                            Description = "Oferuję usługi spzątania biur w Twoim miescie",
+                            Name = "Sprzątanie",
+                            PriceOffer = 100,
+                            UserId = 3,
+                            offerType = 0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            AddressId = 3,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5614),
+                            Description = "SPRZATANIE NA JUZ",
+                            Name = "Sprzątanie",
+                            PriceOffer = 100,
+                            UserId = 4,
+                            offerType = 0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            AddressId = 4,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5715),
+                            Description = "SPRZATANIE NA JUZ",
+                            Name = "Sprzątanie",
+                            PriceOffer = 100,
+                            UserId = 5,
+                            offerType = 0
+                        },
+                        new
+                        {
+                            Id = 11,
+                            AddressId = 5,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5778),
+                            Description = "sprzatam jutro",
+                            Name = "Sprzątanie",
+                            PriceOffer = 100,
+                            UserId = 6,
+                            offerType = 0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            AddressId = 6,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5860),
+                            Description = "SPRZATANIE teraz",
+                            Name = "Sprzątanie",
+                            PriceOffer = 100,
+                            UserId = 5,
+                            offerType = 0
+                        },
+                        new
+                        {
+                            Id = 13,
+                            AddressId = 1,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(5963),
+                            Description = "Piore dywany",
+                            Name = "Pranie dywanów",
+                            PriceOffer = 100,
+                            UserId = 5,
+                            offerType = 2
+                        },
+                        new
+                        {
+                            Id = 14,
+                            AddressId = 2,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(6039),
+                            Description = "wyprawne dywany i juz nie masz alergii",
+                            Name = "Pranie dywanów",
+                            PriceOffer = 100,
+                            UserId = 6,
+                            offerType = 2
+                        },
+                        new
+                        {
+                            Id = 15,
+                            AddressId = 3,
+                            CreatedDate = new DateTime(2023, 3, 17, 10, 41, 1, 664, DateTimeKind.Local).AddTicks(6091),
+                            Description = "Profesjonalne pranie dywanów",
+                            Name = "Pranie dywanów",
+                            PriceOffer = 100,
+                            UserId = 4,
+                            offerType = 2
                         });
                 });
 
@@ -265,7 +436,7 @@ namespace Data.Migrations
                         new
                         {
                             Id = 1,
-                            Email = "jdsks@com",
+                            Email = "jankowalski@com",
                             Name = "Jan Kowalski",
                             PasswordHash = "#1234#",
                             PhoneNumber = "123456",
@@ -274,11 +445,47 @@ namespace Data.Migrations
                         new
                         {
                             Id = 2,
-                            Email = "agak@wp.pl",
+                            Email = "agakruk@wp.pl",
                             Name = "Aga Kruk",
                             PasswordHash = "#$%%^^&&",
                             PhoneNumber = "444555333",
                             RoleId = 3
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Email = "monikal@wp.pl",
+                            Name = "Monika L",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Email = "olgaz@wp.pl",
+                            Name = "Olga Z",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Email = "krzysiekk@wp.pl",
+                            Name = "Krzysiek k",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 2
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Email = "łukaszszus@wp.pl",
+                            Name = "Łukasz szus",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 2
                         });
                 });
 
@@ -296,8 +503,8 @@ namespace Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = 3,
-                            Email = "jdsks@com",
+                            Id = 7,
+                            Email = "janian@com",
                             Name = "Janian",
                             PasswordHash = "#1234#",
                             PhoneNumber = "123456",
@@ -305,9 +512,45 @@ namespace Data.Migrations
                         },
                         new
                         {
-                            Id = 4,
-                            Email = "agak@wp.pl",
-                            Name = "Zsoia",
+                            Id = 8,
+                            Email = "zosia@wp.pl",
+                            Name = "Zosia",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Email = "gosia@wp.pl",
+                            Name = "Gosia",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Email = "mietek@wp.pl",
+                            Name = "Mietek",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Email = "filip@wp.pl",
+                            Name = "Filip Sz",
+                            PasswordHash = "#$%%^^&&",
+                            PhoneNumber = "444555333",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Email = "andrzej@wp.pl",
+                            Name = "Andrzej",
                             PasswordHash = "#$%%^^&&",
                             PhoneNumber = "444555333",
                             RoleId = 1

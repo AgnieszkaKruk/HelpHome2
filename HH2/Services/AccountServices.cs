@@ -30,7 +30,7 @@ namespace Data.Services
                 Email = dto.Email,
                 RoleId = dto.RoleId,
 
-                PhoneNumber = dto.PhoneNumber,
+                PhoneNumber = dto.PhoneNumber, ///dodac rozrozienie na offerent i seeker
 
 
             };
