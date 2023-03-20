@@ -20,7 +20,7 @@ namespace Domain.Entities
 
         public EventStatus Status { get; set; }
 
-        private void SetColor()
+        public void SetColor()
         {
             // sprawdzić czy w praktyce będziep otrzba 4 statusy.. Moze tylko free albo booked? 
             switch (Status)
