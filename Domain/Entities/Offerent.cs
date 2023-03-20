@@ -1,4 +1,5 @@
-﻿using Domain.Entities;
+﻿using Data.Validators;
+using Domain.Entities;
 
 namespace HH2.Entities
 {
@@ -12,6 +13,21 @@ namespace HH2.Entities
         public void AddBlockedSeeker(Seeker seeker)
         {
             BlockedSeekers.Add(seeker);
+        }
+
+        public void AddEvents(List<Event> events)
+        {
+            Event newEvent = new Event();
+            if (!EventDateValidator.ValidateOverlapping(Events, newEvent))
+            {
+                Events.Add(newEvent);
+            }
+            else
+            {
+                throw new Exception("This date is already booked");
+            }
+
+
         }
 
 
