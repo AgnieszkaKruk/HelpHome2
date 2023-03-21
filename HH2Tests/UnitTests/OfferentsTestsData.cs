@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HH2Tests
+namespace HH2Tests.UnitTests
 {
     public class OfferentsTestsData : IEnumerable<object[]>
     {
@@ -37,7 +37,7 @@ namespace HH2Tests
                 new List<Event>()
                 {
                     new Event() { Start = new DateTime(2020, 1, 8, 7, 47, 0), End = new DateTime(2020, 1, 25, 6, 45, 3) },
-              
+
                 }
             };
             yield return new object[]
@@ -51,7 +51,7 @@ namespace HH2Tests
             };
         }
 
-       IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
     }
 

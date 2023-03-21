@@ -1,7 +1,7 @@
 using Domain.Entities;
 using Domain.Utils;
 
-namespace HH2Tests
+namespace HH2Tests.UnitTests
 {
     public class EventTests
     {
@@ -13,11 +13,11 @@ namespace HH2Tests
         {
             Event myEvent = new Event();
             myEvent.Status = status;
-            
+
             myEvent.SetColor();
             string resultColor = myEvent.Color;
 
-       
+
             Assert.Equal(color, resultColor);
         }
     }
