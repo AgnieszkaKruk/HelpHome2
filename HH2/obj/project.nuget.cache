@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7a7DHmX7y6gJQrDE7AJ6PK8gaeSrwNZLc5bAFY8bZfh5X4np0Sk7VpLDDmWUi7q86PQzUcDYEkb8YS9+le971Q==",
+  "dgSpecHash": "ppJ4mil7yrjeTuZ2Kdgm6XyIhPDGG0bUmSP+N8Ns3eywUFiMHMwwcm3N6phoH4p98ATNS/9eWqddvbnIjW9R8Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\HH2\\Data.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\KOMPUTER\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

@@ -57,7 +57,7 @@ namespace Api.Controllers
         }
 
         [HttpPost("user/{userId}")]
-       [Authorize]
+       //[Authorize]
         public async Task<ActionResult<OfferDto>> AddOffer(OfferDto dto, [FromRoute] int userId)
         {
             await _offerServices.AddOffer(dto, userId);

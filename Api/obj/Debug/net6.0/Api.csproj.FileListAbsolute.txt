@@ -258,3 +258,4 @@ C:\Users\KOMPUTER\source\repos\HH2\Api\obj\Debug\net6.0\refint\Api.dll
 C:\Users\KOMPUTER\source\repos\HH2\Api\obj\Debug\net6.0\Api.pdb
 C:\Users\KOMPUTER\source\repos\HH2\Api\obj\Debug\net6.0\Api.genruntimeconfig.cache
 C:\Users\KOMPUTER\source\repos\HH2\Api\obj\Debug\net6.0\ref\Api.dll
+C:\Users\KOMPUTER\source\repos\HH2\Api\bin\Debug\net6.0\MathNet.Numerics.dll

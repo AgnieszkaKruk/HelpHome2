@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1G3bAhJagbGl73MfuSJxpC2sNJer0eVe+cG7Ws/JFxMpz3YLt6Lh+Hms6Al+csLG0bqzDFq3AksOVFk07PbXAQ==",
+  "dgSpecHash": "UKAVNWrR8ByeKHhouKI7g2XwtZm1TyLEJrCCu7FA/aQ/04cb4Me0C+0S3w3Dy5B6SDPa1HRhWDxDJIlJYmr77A==",
   "success": true,
   "projectFilePath": "C:\\Users\\KOMPUTER\\source\\repos\\HH2\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\KOMPUTER\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
     "C:\\Users\\KOMPUTER\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],
   "logs": []

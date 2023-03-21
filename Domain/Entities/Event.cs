@@ -1,18 +1,13 @@
-﻿using Data.Validators;
-using Domain.Utils;
+﻿using Domain.Utils;
 using HH2.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Domain.Entities
 {
     public class Event
     {
         public int Id { get; set; }
+        
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public string Text { get; set; }

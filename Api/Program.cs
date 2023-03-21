@@ -13,6 +13,7 @@ using Data;
 using HH2.Entities;
 using Domain.Models;
 
+
 var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
 
 try

@@ -7,6 +7,7 @@ namespace HH2.Entities
 
     public class Offer
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public OfferType offerType { get; set; }
         public string Name { get; set; }
