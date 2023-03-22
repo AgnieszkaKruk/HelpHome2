@@ -23,7 +23,6 @@ namespace HH2Tests.Api.IntegrationTests
         [Fact]
         public async Task GetUsers_ReturnsOkResult()
         {
-            var expectedStatus = HttpStatusCode.OK;
            
             var result = await _userController.GetAllOfferentsAsync();
 
