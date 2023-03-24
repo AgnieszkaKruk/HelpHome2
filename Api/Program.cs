@@ -14,7 +14,9 @@ using HH2.Entities;
 using Domain.Models;
 
 
+
 var logger = NLogBuilder.ConfigureNLog("nlog.config").GetCurrentClassLogger();
+
 
 try
 {
@@ -43,11 +45,6 @@ try
         });
 
     builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-    // builder.Services.AddScoped<IOfferentServices, OfferentServices>();
-    // builder.Services.AddScoped<ISeekerServices, SeekerServices>();
-    //builder.Services.AddScoped<ICarpetWashingServices, CarpetWashingServices>();
-    // builder.Services.AddScoped<ICleaningServices, CleaningServices>();
-    // builder.Services.AddScoped<IWindowsCleaningServices, WindowsCleaningServices>();
     builder.Services.AddScoped<IAccountServices, AccountServices>();
     builder.Services.AddScoped<IUserServices, UserServices>();
     builder.Services.AddScoped<IOfferServices, OfferServices>();
@@ -63,11 +60,10 @@ try
     .AllowCredentials()
     ));
 
+  
 
     var app = builder.Build();
 
-
-    // Configure the HTTP request pipeline.
     app.UseMiddleware<ErrorHandlingMiddleware>();
     app.UseAuthentication();
     app.UseHttpsRedirection();
@@ -96,4 +92,5 @@ finally
 
     LogManager.Shutdown();
 }
+public partial class Program { }
 
