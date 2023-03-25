@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using HH2;
 using HH2.Entities;
+using HH2Tests.Api.IntegrationTests.Helpers;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +34,17 @@ namespace HH2Tests.Api.IntegrationTests
             _httpClient = _factory.CreateClient();
         }
 
+       private void AddUserToInMemoryDatabase(User user)
+        {
+            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
+            using var scope = scopeFactory.CreateScope();
+            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
+
+            _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
+        }
+
+
         [Theory]
         [InlineData("api/users/offerents")]
         [InlineData("api/users/seekers")]
@@ -41,7 +53,6 @@ namespace HH2Tests.Api.IntegrationTests
         {
             var response = await _httpClient.GetAsync(url);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
-
         }
 
         [Fact]
@@ -58,13 +69,7 @@ namespace HH2Tests.Api.IntegrationTests
         {
             var user = new User { Id = 100, Name = "Aga", Email = "aga@aga", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
 
-            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
-            using var scope = scopeFactory.CreateScope();
-            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
-
-            _dbContext.Users.Add(user);
-            _dbContext.SaveChanges();
-
+            AddUserToInMemoryDatabase(user);
 
             var response = await _httpClient.GetAsync("api/users/" + user.Id);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
@@ -75,12 +80,8 @@ namespace HH2Tests.Api.IntegrationTests
         {
             var user = new User { Id = 101, Name = "Ewa", Email = "ewa@ewa", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
 
-            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
-            using var scope = scopeFactory.CreateScope();
-            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
+            AddUserToInMemoryDatabase(user);
 
-            _dbContext.Users.Add(user);
-            _dbContext.SaveChanges();
             var response = await _httpClient.DeleteAsync("api/users/" + user.Id);
             response.StatusCode.Should().Be(HttpStatusCode.NoContent);
         }
@@ -89,19 +90,31 @@ namespace HH2Tests.Api.IntegrationTests
         public async Task Put_WithValidModel_ReturnsOkResult()
         {
             var user = new User { Id = 104, Name = "Michał", Email = "michał@michał", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
-            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
-            using var scope = scopeFactory.CreateScope();
-            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
 
-            _dbContext.Users.Add(user);
-            _dbContext.SaveChanges();
+            AddUserToInMemoryDatabase(user);
 
             var updatedUser = new User { Id = 104, Name = "Michał", Email = "michał@gmail.com", PasswordHash = "12#$%^", PhoneNumber = "123456789" };
-            var json = JsonConvert.SerializeObject(updatedUser);
-            var httpContent = new StringContent(json, UnicodeEncoding.UTF8,"application/json");
+
+            var httpContent = updatedUser.ToJsonToHttpContent();
             var response = await _httpClient.PutAsync("api/users/" + user.Id,httpContent);
 
             response.StatusCode.Should().Be(HttpStatusCode.OK);
+        }
+
+        [Fact]
+        public async Task Put_withInvalidmodel_ReturnsBadRequestResult()
+        {
+            var user = new User { Id = 110, Name = "Jacek", Email = "jacek@jacek", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
+
+            AddUserToInMemoryDatabase(user);
+
+            var updatedUser = new User { Id = 104, PasswordHash = "12#$%^", PhoneNumber = "123456789" };
+
+            var httpContent = updatedUser.ToJsonToHttpContent();
+            var response = await _httpClient.PutAsync("api/users/" + user.Id, httpContent);
+
+            response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
+
         }
 
 
