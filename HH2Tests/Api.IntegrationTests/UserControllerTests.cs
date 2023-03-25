@@ -49,14 +49,14 @@ namespace HH2Tests.Api.IntegrationTests
         [InlineData("api/users/offerents")]
         [InlineData("api/users/seekers")]
 
-        public async Task GetUsers_WithExistingData_ReturnsOkResult(string url)
+        public async Task GetUsers_ForExistingData_ReturnsOk(string url)
         {
             var response = await _httpClient.GetAsync(url);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
         [Fact]
-        public async Task GetById_WithNonExistingUser_ReturnsNotFoundResult()
+        public async Task GetById_ForNonExistingUser_ReturnsNotFound()
         {
             var response = await _httpClient.GetAsync("api/users/876");
             response.StatusCode.Should().Be(HttpStatusCode.NotFound);
@@ -65,7 +65,7 @@ namespace HH2Tests.Api.IntegrationTests
 
 
         [Fact]
-        public async Task GetById_WithExistingData_returnOkResult()
+        public async Task GetById_ForExistingData_ReturnOk()
         {
             var user = new User { Id = 100, Name = "Aga", Email = "aga@aga", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
 
@@ -76,7 +76,7 @@ namespace HH2Tests.Api.IntegrationTests
         }
 
         [Fact]
-        public async Task Delete_DeleteExistingData_ReturnNoContentResult()
+        public async Task Delete_DeleteExistingData_ReturnNoContent()
         {
             var user = new User { Id = 101, Name = "Ewa", Email = "ewa@ewa", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
 
@@ -87,7 +87,7 @@ namespace HH2Tests.Api.IntegrationTests
         }
 
         [Fact]
-        public async Task Put_WithValidModel_ReturnsOkResult()
+        public async Task Put_ForValidModel_ReturnsOk()
         {
             var user = new User { Id = 104, Name = "Michał", Email = "michał@michał", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
 
@@ -102,7 +102,7 @@ namespace HH2Tests.Api.IntegrationTests
         }
 
         [Fact]
-        public async Task Put_withInvalidmodel_ReturnsBadRequestResult()
+        public async Task Put_ForInvalidModel_ReturnsBadRequest()
         {
             var user = new User { Id = 110, Name = "Jacek", Email = "jacek@jacek", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
 
