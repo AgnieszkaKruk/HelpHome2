@@ -1,9 +1,13 @@
 ﻿using FluentAssertions;
 using HH2;
 using HH2.Entities;
+using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Net;
+using System.Text;
+using System.Text.Json.Serialization;
 
 namespace HH2Tests.Api.IntegrationTests
 {
@@ -22,6 +26,7 @@ namespace HH2Tests.Api.IntegrationTests
                             {
                                 var DbContextOptions = services.SingleOrDefault(service => service.ServiceType == typeof(DbContextOptions<HHDbContext>));
                                 services.Remove(DbContextOptions);
+                                services.AddSingleton<IPolicyEvaluator, FakePolicyEvaluator>();
                                 services.AddDbContext<HHDbContext>(options => options.UseInMemoryDatabase("HHDb"));
                             });
                         });
@@ -47,21 +52,6 @@ namespace HH2Tests.Api.IntegrationTests
         }
 
 
-        [Fact]
-        public async Task Delete_DeleteExistingData_ReturnNoContentResult()
-        {
-            var user = new User { Id = 101, Name = "Ewa", Email = "ewa@ewa", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
-
-            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
-            using var scope = scopeFactory.CreateScope();
-            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
-
-            _dbContext.Users.Add(user);
-            _dbContext.SaveChanges();
-            var response = await _httpClient.DeleteAsync("api/users/" + user.Id);
-            response.StatusCode.Should().Be(HttpStatusCode.NoContent);
-        }
-
 
         [Fact]
         public async Task GetById_WithExistingData_returnOkResult()
@@ -77,6 +67,40 @@ namespace HH2Tests.Api.IntegrationTests
 
 
             var response = await _httpClient.GetAsync("api/users/" + user.Id);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+        }
+
+        [Fact]
+        public async Task Delete_DeleteExistingData_ReturnNoContentResult()
+        {
+            var user = new User { Id = 101, Name = "Ewa", Email = "ewa@ewa", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
+
+            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
+            using var scope = scopeFactory.CreateScope();
+            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
+
+            _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
+            var response = await _httpClient.DeleteAsync("api/users/" + user.Id);
+            response.StatusCode.Should().Be(HttpStatusCode.NoContent);
+        }
+
+        [Fact]
+        public async Task Put_WithValidModel_ReturnsOkResult()
+        {
+            var user = new User { Id = 104, Name = "Michał", Email = "michał@michał", PasswordHash = "12#$%^", PhoneNumber = "444555666" };
+            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
+            using var scope = scopeFactory.CreateScope();
+            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
+
+            _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
+
+            var updatedUser = new User { Id = 104, Name = "Michał", Email = "michał@gmail.com", PasswordHash = "12#$%^", PhoneNumber = "123456789" };
+            var json = JsonConvert.SerializeObject(updatedUser);
+            var httpContent = new StringContent(json, UnicodeEncoding.UTF8,"application/json");
+            var response = await _httpClient.PutAsync("api/users/" + user.Id,httpContent);
+
             response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 

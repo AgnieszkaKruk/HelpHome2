@@ -50,7 +50,7 @@ namespace HelpHomeApi.Controllers
     
 
         [HttpDelete("{id}")]
-       // [Authorize]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -62,7 +62,7 @@ namespace HelpHomeApi.Controllers
         }
 
         [HttpPut("{id}")]
-       [Authorize]
+        [Authorize]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
