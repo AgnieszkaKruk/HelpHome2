@@ -52,7 +52,6 @@ namespace HH2Tests.Api.IntegrationTests
         }
 
         [Fact]
-
         public async Task GetOfferByIdAsync_ForExistingData_ReturnsOk()
         {
             Offer offer1 = new Offer() { Name = "Sprzątanie", PriceOffer = 100, offerType = Domain.Utils.OfferType.Sprzątanie, Description = "sdssd", AddressId =2, UserId=2 };
