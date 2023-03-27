@@ -40,7 +40,7 @@ namespace Api.Controllers
             {
                 new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
                 new Claim(ClaimTypes.Name, user.Name),
-                new Claim(ClaimTypes.Role,user.Role.Id.ToString()),
+                new Claim(ClaimTypes.Role,user.RoleId.ToString()),
             };
 
             var identityOfferent = new ClaimsIdentity(claimsOfferent, CookieAuthenticationDefaults.AuthenticationScheme);

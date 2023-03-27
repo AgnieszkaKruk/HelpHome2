@@ -1,10 +1,13 @@
-﻿using Domain.Models;
+﻿using Data.Services;
+using Domain.Models;
 using FluentAssertions;
 using HH2;
+using HH2.Entities;
 using HH2Tests.Api.IntegrationTests.Helpers;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Moq;
 
 namespace HH2Tests.Api.IntegrationTests
 {
@@ -12,6 +15,7 @@ namespace HH2Tests.Api.IntegrationTests
     {
         private WebApplicationFactory<Program> _factory;
         private HttpClient _httpClient;
+        private Mock<IAccountServices> _accountServicesMock = new Mock<IAccountServices>();
 
         public AccountControllerTests(WebApplicationFactory<Program> factory)
         {
@@ -22,6 +26,7 @@ namespace HH2Tests.Api.IntegrationTests
                             {
                                 var DbContextOptions = services.SingleOrDefault(service => service.ServiceType == typeof(DbContextOptions<HHDbContext>));
                                 services.Remove(DbContextOptions);
+                                services.AddSingleton<IAccountServices>(_accountServicesMock.Object);
                                 services.AddDbContext<HHDbContext>(options => options.UseInMemoryDatabase("HHDb"));
                             });
                         });
@@ -49,6 +54,19 @@ namespace HH2Tests.Api.IntegrationTests
 
             response.StatusCode.Should().Be(System.Net.HttpStatusCode.BadRequest);
 
+        }
+
+        [Fact]
+        public async Task Login_ForRegisterUser_ReturnsOk()
+        {
+            User user = new User() { Name = "Agnieszka", Email = "aga@aga", PhoneNumber = "12345675656", RoleId = 1, Id = 123 };
+            _accountServicesMock.Setup(e=>e.AutenticateUser(It.IsAny<LoginDto>())).Returns(user);
+                                  
+            LoginDto dto = new LoginDto { Email = "aga@aga", Password = "1234567" };
+            var httpContent = dto.ToJsonToHttpContent();
+            var response = await _httpClient.PostAsync("api/account/login", httpContent);
+
+            response.StatusCode.Should().Be(System.Net.HttpStatusCode.OK);
         }
     }
 }

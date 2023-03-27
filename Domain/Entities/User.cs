@@ -1,4 +1,5 @@
 ﻿using Domain.Entities;
+using Domain.Utils;
 using HH2.Utils;
 
 namespace HH2.Entities
@@ -17,7 +18,8 @@ namespace HH2.Entities
         
 
         public int RoleId { get; set; }
-        public virtual Role Role { get; set; }
+       public virtual Role Role { get; set; }
+      // public string RoleName { get; set; }
         
     }
 }

@@ -1,7 +1,9 @@
 ﻿using Data.Exeptions;
 using Domain.Models;
+using Domain.Utils;
 using HH2;
 using HH2.Entities;
+using HH2.Utils;
 using Microsoft.AspNetCore.Identity;
 using System.Data.Entity;
 
@@ -28,13 +30,15 @@ namespace Data.Services
                 {
                     Name = dto.Name,
                     Email = dto.Email,
-                    PhoneNumber = dto.PhoneNumber
+                    PhoneNumber = dto.PhoneNumber,
+                   
                 };
 
                 var newPassword = _passwordHasher.HashPassword(newSeeker, dto.Password);
                 newSeeker.PasswordHash = newPassword;
 
                 newSeeker.RoleId = dto.RoleId;
+               
                 _context.Users.Add(newSeeker);
                 _context.SaveChanges();
             }
@@ -44,19 +48,39 @@ namespace Data.Services
                 {
                     Name = dto.Name,
                     Email = dto.Email,
-                    PhoneNumber = dto.PhoneNumber
+                    PhoneNumber = dto.PhoneNumber,
+                    
                 };
 
                 var newPassword = _passwordHasher.HashPassword(newOfferent, dto.Password);
                 newOfferent.PasswordHash = newPassword;
 
                 newOfferent.RoleId = dto.RoleId;
+               
                 _context.Users.Add(newOfferent);
                 _context.SaveChanges();
             }
+            else if (dto.RoleId == 3) // Admin
+            {
+                var newAdmin = new User()
+                {
+                    Name = dto.Name,
+                    Email = dto.Email,
+                    PhoneNumber = dto.PhoneNumber,
+                   
+                };
+
+                var newPassword = _passwordHasher.HashPassword(newAdmin, dto.Password);
+                newAdmin.PasswordHash = newPassword;
+
+                newAdmin.RoleId = dto.RoleId;
+             
+                _context.Users.Add(newAdmin);
+                _context.SaveChanges();
+                
+            }
             else
             {
-                
                 throw new ArgumentException("Invalid roleId value.");
             }
 
@@ -65,7 +89,7 @@ namespace Data.Services
 
         public User AutenticateUser(LoginDto dto)
         {
-            var user = _context.Users.Include(u => u.Role).FirstOrDefault(u => u.Email == dto.Email);
+            var user = _context.Users.FirstOrDefault(u => u.Email == dto.Email);
 
             if (user == null)
             {

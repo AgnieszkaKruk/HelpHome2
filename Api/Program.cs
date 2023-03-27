@@ -48,6 +48,7 @@ try
     builder.Services.AddScoped<IAccountServices, AccountServices>();
     builder.Services.AddScoped<IUserServices, UserServices>();
     builder.Services.AddScoped<IOfferServices, OfferServices>();
+    builder.Services.AddScoped<IEventServives, EventServices>();
     builder.Services.AddSingleton<ILog, Log>();
     builder.Services.AddScoped<ErrorHandlingMiddleware>();
     builder.Services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
