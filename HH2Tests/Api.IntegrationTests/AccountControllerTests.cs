@@ -4,7 +4,6 @@ using FluentAssertions;
 using HH2;
 using HH2.Entities;
 using HH2Tests.Api.IntegrationTests.Helpers;
-using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Moq;

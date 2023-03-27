@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HH2Tests.UnitTests
+namespace HH2Tests.Api.IntegrationTests.DataForTests
 {
     public class OfferentsTestsData : IEnumerable<object[]>
     {

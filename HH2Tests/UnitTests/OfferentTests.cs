@@ -1,10 +1,6 @@
 ﻿using Data.Validators;
 using Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using HH2Tests.Api.IntegrationTests.DataForTests;
 
 namespace HH2Tests.UnitTests
 {

@@ -5,10 +5,7 @@ using HH2Tests.Api.IntegrationTests.Helpers;
 using Microsoft.AspNetCore.Authorization.Policy;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using System.Net;
-using System.Text;
-using System.Text.Json.Serialization;
 
 namespace HH2Tests.Api.IntegrationTests
 {
