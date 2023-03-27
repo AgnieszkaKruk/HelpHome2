@@ -67,5 +67,16 @@ namespace HH2Tests.Api.IntegrationTests
 
             response.StatusCode.Should().Be(System.Net.HttpStatusCode.OK);
         }
+
+        [Fact]
+        public async Task Login_ForUnRegisterUser_ReturnsUnauthorized()
+        {
+            
+            LoginDto dto = new LoginDto { Email = "aga1@aga", Password = "1234567" };
+            var httpContent = dto.ToJsonToHttpContent();
+            var response = await _httpClient.PostAsync("api/account/login", httpContent);
+
+            response.StatusCode.Should().Be(System.Net.HttpStatusCode.Unauthorized);
+        }
     }
 }

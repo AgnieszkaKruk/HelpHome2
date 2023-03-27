@@ -3007,3 +3007,9 @@
 2023-03-26 17:03:25.1192 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
 2023-03-26 17:03:25.1999 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\KOMPUTER\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
 2023-03-26 17:03:27.3204 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\KOMPUTER\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-03-27 13:15:08.5876 Info Message Template Auto Format enabled
+2023-03-27 13:15:08.6154 Info Loading assembly: NLog.Web.AspNetCore
+2023-03-27 13:15:08.7276 Info Registered target NLog.Targets.FileTarget(Name=errorFile-web)
+2023-03-27 13:15:08.7276 Info Registered target NLog.Targets.FileTarget(Name=otherFile-web)
+2023-03-27 13:15:08.7875 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\KOMPUTER\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config
+2023-03-27 13:15:10.5985 Info Validating config: TargetNames=errorFile-web, otherFile-web, ConfigItems=36, FilePath=C:\Users\KOMPUTER\source\repos\HH2\Api\bin\Debug\net6.0\nlog.config

@@ -19,9 +19,9 @@ namespace HH2Tests.Api.IntegrationTests.DataForTests
             {
                 new RegisterDto() { Name = "test6", Email = "test6test6", Password = "1111111", ConfirmPassword = "1111111", PhoneNumber = "123456789", RoleId = 1 },
             };
-            yield return new object[] // za krótka nazwa
+            yield return new object[] // pusta nazwa
            {
-            new RegisterDto() { Name = "t", Email = "t@test.pl", Password = "1111111", ConfirmPassword = "1111111", PhoneNumber = "555666777", RoleId = 1 },
+            new RegisterDto() { Name = "", Email = "t@test.pl", Password = "1111111", ConfirmPassword = "1111111", PhoneNumber = "555666777", RoleId = 1 },
             };
         }
 
