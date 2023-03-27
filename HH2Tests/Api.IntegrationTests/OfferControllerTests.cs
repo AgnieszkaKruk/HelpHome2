@@ -3,6 +3,7 @@ using HH2;
 using HH2.Entities;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Net;
 using System.Security.Policy;
 
@@ -60,6 +61,34 @@ namespace HH2Tests.Api.IntegrationTests
          
 
             var response = await _client.GetAsync("api/offers/" + offer1.Id);
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+        }
+
+        [Fact]
+        public async Task GetOfferByIdAsync_ForNonExistingData_ReturnsNotFound()
+        {
+            
+            var response = await _client.GetAsync("api/offers/3435");
+            response.StatusCode.Should().Be(HttpStatusCode.NotFound);
+
+        }
+
+        [Fact]
+        public async Task GetOffersFromUserById_ForExistingData_ReturnsOk()
+        {
+
+            User user = new User { Name = "Aga", Email = "aga@aga", PasswordHash = "12#$%^", PhoneNumber = "444555666", RoleId = 1 };   
+            
+            var scopeFactory = _factory.Services.GetService<IServiceScopeFactory>();
+            using var scope = scopeFactory.CreateScope();
+            var _dbContext = scope.ServiceProvider.GetService<HHDbContext>();
+
+            _dbContext.Users.Add(user);
+
+            _dbContext.SaveChanges();
+
+            var response = await _client.GetAsync("api/offers/user/" + user.Id);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
 
         }
