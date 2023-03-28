@@ -1,20 +1,14 @@
-﻿using Api.Controllers;
-using Data.Services;
+﻿using Api;
+using AutoMapper;
 using Domain.Models;
-using Domain.Utils;
 using FluentAssertions;
 using HH2;
 using HH2.Entities;
 using HH2Tests.Api.IntegrationTests.Helpers;
 using Microsoft.AspNetCore.Authorization.Policy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
-using Moq;
-using Newtonsoft.Json;
 using System.Net;
-using System.Net.Http;
-using System.Text;
 
 
 namespace HH2Tests.Api.IntegrationTests
@@ -23,6 +17,7 @@ namespace HH2Tests.Api.IntegrationTests
     {
         private HttpClient _client;
         private WebApplicationFactory<Program> _factory;
+
 
         public OfferControllerTests(WebApplicationFactory<Program> factory)
         {
@@ -69,7 +64,6 @@ namespace HH2Tests.Api.IntegrationTests
 
             AddOfferToInMemoryDatabase(offer1);
 
-
             var response = await _client.GetAsync("api/offers/" + offer1.Id);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
 
@@ -105,56 +99,79 @@ namespace HH2Tests.Api.IntegrationTests
 
 
 
-        [Fact] 
+        [Fact]
         public async Task AddOffer_WithValidModel_ReturnsOk()
         {
-            Offer offer = new Offer()
+            IMapper mapper = new MapperConfiguration(cfg => cfg.AddProfile<UserMappingProfile>()).CreateMapper();
+            OfferDto offerDto = new OfferDto()
             {
                 Name = "Sprzątanie",
                 PriceOffer = 100,
                 Description = "sdssd",
                 UserId = 2,
-                AddressId = 5
+                offertype = Domain.Utils.OfferType.Sprzątanie,
+                Address = new Address()
+                {
+                    City = "Wrocław",
+                    Street = "Długa",
+                    PostalCode = "54=345"
+                }
             };
+            var newOffer = mapper.Map<Offer>(offerDto);
 
-            var httpContent = offer.ToJsonToHttpContent();
-            var response = await  _client.PostAsync("api/offers/user/" + offer.UserId, httpContent);
+            var httpContent = newOffer.ToJsonToHttpContent();
+            var response = await _client.PostAsync("api/offers/user/" + newOffer.UserId, httpContent);
             response.StatusCode.Should().Be(HttpStatusCode.OK);
         }
 
-       
 
         [Fact]
         public async Task Update_ForValidModel_ReturnsOk()
         {
-            Offer offer = new Offer()
+            // arrange
+            IMapper mapper = new MapperConfiguration(cfg => cfg.AddProfile<UserMappingProfile>()).CreateMapper();
+            OfferDto offerDto = new OfferDto()
             {
                 Name = "Sprzątanie",
                 PriceOffer = 100,
                 Description = "sdssd",
                 UserId = 2,
-                AddressId = 3
+                offertype = Domain.Utils.OfferType.Sprzątanie,
+                Address = new Address()
+                {
+                    City = "Wrocław",
+                    Street = "Długa",
+                    PostalCode = "54=345"
+                }
             };
+            var newOffer = mapper.Map<Offer>(offerDto);
+            AddOfferToInMemoryDatabase(newOffer);
 
-            AddOfferToInMemoryDatabase(offer);
-
-            Offer offerUpdated = new Offer()
+            // act
+            var updatedOfferDto = new OfferDto()
             {
-                Name = "Mycie okien",
-                PriceOffer = 100,
-                Description = "sdssd",
+                Id = newOffer.Id,
+                Name = "Sprzątanie 2",
+                PriceOffer = 200,
+                Description = "nowy opis",
                 UserId = 2,
-                AddressId = 3
+                offertype = Domain.Utils.OfferType.Sprzątanie,
+                Address = new Address()
+                {
+                    City = "Wrocław",
+                    Street = "Mokra",
+                    PostalCode = "54=345"
+                }
             };
 
-            var httpContent = offerUpdated.ToJsonToHttpContent();
-            var response = await _client.PutAsync("api/offers/" + offer.Id, httpContent);
+            var updatedOffer = mapper.Map<Offer>(updatedOfferDto);
+            var httpContent = updatedOffer.ToJsonToHttpContent();
+            var response = await _client.PutAsync($"/api/offers/{newOffer.Id}", httpContent);
 
             response.StatusCode.Should().Be(HttpStatusCode.OK);
-        }
-    
 
-    
+        }
+
 
         [Fact]
         public async Task Delete_DeleteExistingOffer_ReturnNoContent()
