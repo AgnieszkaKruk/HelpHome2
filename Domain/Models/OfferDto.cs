@@ -1,7 +1,7 @@
 ﻿using Domain.Utils;
 using HH2.Entities;
 using HH2.Utils;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
@@ -20,7 +20,7 @@ namespace Domain.Models
         public DateTime? UpdateDate { get; set; }
         public int? PriceOffer { get; set; }
 
-        [Newtonsoft.Json.JsonConverter(typeof(JsonStringEnumConverter))]
+        [System.Text.Json.Serialization.JsonConverter(typeof(JsonStringEnumConverter))]
         public Regularity? regularity { get; set; }
        
         public virtual Address? Address { get; set; }
