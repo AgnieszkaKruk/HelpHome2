@@ -126,6 +126,32 @@ namespace HH2Tests.Api.IntegrationTests
 
 
         [Fact]
+        public async Task AddOffer_WithInValidModel_ReturnsBadRequest()
+        {
+            IMapper mapper = new MapperConfiguration(cfg => cfg.AddProfile<UserMappingProfile>()).CreateMapper();
+            OfferDto offerDto = new OfferDto()
+            {
+                
+                PriceOffer = 100,
+                Description = "sdssd",
+                UserId = 2,
+                offertype = Domain.Utils.OfferType.Sprzątanie,
+                Address = new Address()
+                {
+                    City = "Wrocław",
+                    Street = "Długa",
+                    PostalCode = "54=345"
+                }
+            };
+            var newOffer = mapper.Map<Offer>(offerDto);
+
+            var httpContent = newOffer.ToJsonToHttpContent();
+            var response = await _client.PostAsync("api/offers/user/" + newOffer.UserId, httpContent);
+            response.StatusCode.Should().Be(HttpStatusCode.BadRequest);
+        }
+
+
+        [Fact]
         public async Task Update_ForValidModel_ReturnsOk()
         {
             // arrange
